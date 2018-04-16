@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+#include "cstring"
+
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+    setlocale(LC_ALL,"rus");
+    cout<<"¬ведите текст : "<<endl;
+	string l;
+	cin>>l;
+	ofstream fout;
+	fout.open("nyan.txt");
+	fout<<l;
+    fout.close();
+	return 0;
